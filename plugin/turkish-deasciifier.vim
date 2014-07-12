@@ -6,7 +6,7 @@ if exists("g:loaded_turkish_deasciifier")
 endif
 let g:loaded_turkish_deasciifier = 1
 
-if exists("g:turkish_deasciifier_path")
+if !exists("g:turkish_deasciifier_path")
   let g:turkish_deasciifier_path = 'turkish-deasciify'
 endif
 

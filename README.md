@@ -12,6 +12,10 @@ vmap <Space>tr :<c-u>call Turkish_Deasciify()<CR>
 vmap <Space>rt :<c-u>call Turkish_Asciify()<CR>
 ```
 
+## Demo
+
+![http://i.imgur.com/BChFSRX.gif](Demo)
+
 ## Requirements
 
 Note that you need to install [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) to use this plugin. If you don't specify a path for the [executable](https://github.com/emres/turkish-deasciifier/blob/master/turkish-deasciify) file, the plugin will assume that it is included in the environment. However, if that is not the case, you can specify a path for it in your .vimrc file:
