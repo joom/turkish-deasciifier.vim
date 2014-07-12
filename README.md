@@ -14,7 +14,7 @@ vmap <Space>rt :<c-u>call Turkish_Asciify()<CR>
 
 ## Demo
 
-![http://i.imgur.com/BChFSRX.gif](Demo)
+![Demo](http://i.imgur.com/BChFSRX.gif)
 
 ## Requirements
 
