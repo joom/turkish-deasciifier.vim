@@ -18,7 +18,13 @@ vmap <Space>rt :<c-u>call Turkish_Asciify()<CR>
 
 ## Requirements
 
-Note that you need to install [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) to use this plugin. If you don't specify a path for the [executable](https://github.com/emres/turkish-deasciifier/blob/master/turkish-deasciify) file, the plugin will assume that it is included in the environment. However, if that is not the case, you can specify a path for it in your .vimrc file:
+Note that you need to install [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) to use this plugin. Running this command would be a easy way to do so:
+
+```bash
+cd ~/ && mkdir -p Library && cd Library && git clone https://github.com/emres/turkish-deasciifier.git
+```
+
+If you don't specify a path for the [executable](https://github.com/emres/turkish-deasciifier/blob/master/turkish-deasciify) file, the plugin will assume that it is included in the environment. However, if that is not the case (if you installed [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) with the command above, it is not), you can specify a path for it in your .vimrc file:
 
 ```vim
 let g:turkish_deasciifier_path = '~/Library/turkish-deasciifier/turkish-deasciify'
