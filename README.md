@@ -1,7 +1,7 @@
 turkish-deasciifier.vim
 =======================
 
-This plugin is a tool to pipe your selection into the [Python code written by emres (Emre Sevinç)](https://github.com/emres/turkish-deasciifier/), which is based on Deniz Yüret's turkish-mode [emres/turkish-mode](https://github.com/emres/turkish-mode).
+This plugin is a tool to pipe your selection into a Turkish deasciifier, which is based on Deniz Yüret's [turkish-mode](https://github.com/emres/turkish-mode).
 
 It contains two functions, one to deasciify a selection, and the other to asciify it.
 
@@ -18,7 +18,21 @@ vmap <Space>rt :<c-u>call Turkish_Asciify()<CR>
 
 ## Requirements
 
-Note that you need to install [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) to use this plugin. Running this command would be a easy way to do so:
+Note that you need to install an executable Turkish deasciifier program. There are several ports of it in different languages.
+
+**1)** [f/deasciifier](https://github.com/f/deasciifier/) is the easier version to install if you have `node` and `npm` installed. This command would install the deasciifier:
+
+```bash
+npm install deasciifier -g
+```
+
+Then you have to include this line in your .vimrc file:
+
+```vim
+let g:turkish_deasciifier_path = 'deasciify'
+```
+
+**2)** [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) is another deasciifier version that you can use if you have Python installed. Running this command would be a easy way to do so:
 
 ```bash
 cd ~/ && mkdir -p Library && cd Library && git clone https://github.com/emres/turkish-deasciifier.git
@@ -29,6 +43,7 @@ If you don't specify a path for the [executable](https://github.com/emres/turkis
 ```vim
 let g:turkish_deasciifier_path = '~/Library/turkish-deasciifier/turkish-deasciify'
 ```
+
 
 ## Installation
 
