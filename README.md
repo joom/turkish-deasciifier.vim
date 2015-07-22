@@ -32,7 +32,19 @@ Then you have to include this line in your .vimrc file:
 let g:turkish_deasciifier_path = 'deasciify'
 ```
 
-**2)** [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) is another deasciifier version that you can use if you have Python installed. Running this command would be a easy way to do so:
+**2)** [joom/turkish-deasciifier.hs](https://github.com/joom/turkish-deasciifier.hs/) is another easy version to install if you have Haskell installed (`cabal` and `ghc`). This command would install the deasciifier:
+
+```bash
+cabal install turkish-deasciifier
+```
+
+Then you have to include this line in your .vimrc file:
+
+```vim
+let g:turkish_deasciifier_path = 'turkish-deasciifier'
+```
+
+**3)** [emres/turkish-deasciifier](https://github.com/emres/turkish-deasciifier/) is another deasciifier version that you can use if you have Python installed. Running this command would be a easy way to do so:
 
 ```bash
 cd ~/ && mkdir -p Library && cd Library && git clone https://github.com/emres/turkish-deasciifier.git
